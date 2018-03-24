@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reddit's Luigi (aka the Second Home Page)</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   
+    <link rel="stylesheet" href="../../assets/css/styles.css" media="screen" title="styles.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+
+<body>
+    {{!-- =============================== Navbar --}}
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Reddit's Luigi</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/saved-articles">Saved Articles</a>
+                </li>
+                <li>
+                    <a href="/scrape">Scrape New Articles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <div class="pageTitles">
+            <h1 class="pageTitle">Mongo Scraper</h1>
+            <h3 class="pageSubtitle">Reddit Articles</h3>
+        </div>
+    </div>
+    <main id="wrapper">
+        {{{body}}}
+    </main>
+</body>
+
+</html>
